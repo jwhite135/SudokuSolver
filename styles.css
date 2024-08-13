@@ -1,0 +1,61 @@
+#intro {
+    text-align: center;
+}
+button {
+    margin: 5px;
+}
+#steps {
+    justify-content: space-between;
+}
+body {
+    background-color: papayawhip;
+}
+.sr-only {
+	position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+table {
+    margin: auto;
+    border-collapse: collapse;
+}
+.sudokucell {
+    background-color: lightgray;
+    overflow: hidden;
+    width: 3ch;
+    font-size: 35px;
+    width: 60px;
+    height: 60px;
+    box-sizing: border-box;
+    text-align: center;
+    caret-color: transparent;
+}
+td {
+    padding: 0;
+    width: 60px;
+    height: 60px;
+}
+td:nth-child(3n) {
+    border-right: 5px solid black;
+}
+td:nth-child(3n+1) {
+    border-left: 5px solid black;
+}
+tr:nth-child(3n) td {
+    border-bottom: 5px solid black;
+}
+tr:nth-child(3n+1) td {
+    border-top: 5px solid black;
+}
+.wrong {
+    border-color: red;
+}
+.wrong:focus {
+    outline: 7px red;
+}

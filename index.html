@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <html lang="en">
+    <meta charset="UTF-8">
+    <title>Sudoku Solver</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="styles.css"> 
+    <script src="sudokusolver.js"></script><!--Necessary meta elements, including tying in CSS and JS-->
+</head>
+<body>
+    <div id="intro">
+        <h1>Sudoku</h1><br>
+        <button type="button" id="generator" onclick="generateSudoku()">Generate a sudoku!</button><br><!--Calls a JS function that fills the sudoku table with a sudoku-->
+        <button type="button" id="solver" onclick="solveSwitch()">Solve it</button><br><!--Solves the sudoku, either instantly or "slowly" based on whether the Show steps? checkbox is checked-->
+        <label for="steps">
+            <input type="checkbox" id="steps"><span>Show steps?</span>
+        </label>
+    </div>
+    <div id="board">
+        <table id="sudoku-board"><!--Javascript will construct this table to avoid having hundreds of the same html lines-->
+        </table>
+    </div>
+</body>
+</html>
